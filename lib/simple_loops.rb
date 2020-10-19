@@ -18,11 +18,12 @@ def output_array(array)
 end
 
 def return_string_array(array)
-  counter = 0
-  new_array = []
+  counter = 0 # set counter variable to 0
+  new_array = [] # set new_array variable to an empty array
   while counter < array.length do
-    new_array << array[counter].to_s
-    counter += 1
+    new_array << array[counter].to_s # take the element to correlates to the index of array that counter sets and convert to
+    #string, then push that string into empty array
+    counter += 1 # after each loop through array, increase counter variable by 1
   end
-  p new_array
+  p new_array # prints and returns new_array with string elements
 end
